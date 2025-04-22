@@ -27,6 +27,7 @@ Clona este repositorio en tu máquina local:
 ```bash
 git clone https://github.com/tu_usuario/perros-y-gatos.git
 
+```
 2. Iniciar un servidor local con Python
 Este proyecto utiliza un servidor básico de Python para servir el archivo index.html.
 
@@ -35,7 +36,9 @@ Si tienes Python 3.x instalado, puedes iniciar el servidor con el siguiente coma
 bash
 Copiar
 Editar
+```bash
 python -m http.server 8000
+```
 Este comando iniciará un servidor en http://localhost:8000.
 
 3. Exponer el servidor con Ngrok (Opcional, para dispositivos móviles)
@@ -47,28 +50,7 @@ Una vez instalado, abre una terminal y navega a la carpeta donde está instalado
 
 Ejecuta el siguiente comando para exponer el servidor local a internet:
 
-bash
-Copiar
-Editar
+```bash
 ngrok http 8000
-Ngrok generará una URL pública que se verá algo como esto:
+```
 
-bash
-Copiar
-Editar
-Forwarding                    http://<ngrok_id>.ngrok.io -> http://localhost:8000
-Usa esta URL (http://<ngrok_id>.ngrok.io) en tu dispositivo móvil para acceder a la aplicación.
-
-Uso
-Abre la URL generada por Ngrok en tu dispositivo móvil o en un navegador web.
-
-La cámara web se iniciará automáticamente y mostrará la imagen capturada.
-
-La aplicación procesará la imagen y mostrará si es un Perro o un Gato.
-
-Puedes cambiar entre las cámaras (delantera o trasera) haciendo clic en el botón Cambiar cámara.
-
-Estructura del Proyecto
-index.html: Archivo principal con la interfaz y lógica de la aplicación.
-
-model.json: El modelo de TensorFlow.js que se carga para hacer las predicciones (asegúrate de tener este archivo en la misma carpeta que index.html).
