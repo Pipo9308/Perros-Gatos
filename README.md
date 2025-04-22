@@ -25,7 +25,7 @@ Este proyecto utiliza TensorFlow.js para clasificar imágenes en tiempo real a t
 Clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/tu_usuario/perros-y-gatos.git
+https://github.com/Pipo9308/Perros-Gatos.git
 
 ```
 2. Iniciar un servidor local con Python
