@@ -53,4 +53,18 @@ Ejecuta el siguiente comando para exponer el servidor local a internet:
 ```bash
 ngrok http 8000
 ```
+Usa esta URL (http://<ngrok_id>.ngrok.io) en tu dispositivo móvil para acceder a la aplicación.
 
+Uso
+Abre la URL generada por Ngrok en tu dispositivo móvil o en un navegador web.
+
+La cámara web se iniciará automáticamente y mostrará la imagen capturada.
+
+La aplicación procesará la imagen y mostrará si es un Perro o un Gato.
+
+Puedes cambiar entre las cámaras (delantera o trasera) haciendo clic en el botón Cambiar cámara.
+
+Estructura del Proyecto
+index.html: Archivo principal con la interfaz y lógica de la aplicación.
+
+model.json: El modelo de TensorFlow.js que se carga para hacer las predicciones (asegúrate de tener este archivo en la misma carpeta que index.html).
